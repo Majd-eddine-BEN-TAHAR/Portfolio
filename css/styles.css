@@ -88,12 +88,14 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#3d94dd),
-      color-stop(#3dddd6),
-      to(#3ddd86));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3d94dd),
+    color-stop(#3dddd6),
+    to(#3ddd86)
+  );
   background: linear-gradient(to bottom, #3d94dd, #3dddd6, #3ddd86);
   border-radius: 10px;
 }
@@ -269,12 +271,14 @@ header {
   background-color: black;
   border-radius: 1rem;
   background: -o-linear-gradient(left, #3d94dd, #3dddd6, #3ddd86);
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#3d94dd),
-      color-stop(#3dddd6),
-      to(#3ddd86));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#3d94dd),
+    color-stop(#3dddd6),
+    to(#3ddd86)
+  );
   background: linear-gradient(to right, #3d94dd, #3dddd6, #3ddd86);
 }
 
@@ -286,7 +290,8 @@ header {
   -webkit-transform-origin: right;
   -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  -webkit-transition: -webkit-transform 650ms
+    cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   -o-transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -306,7 +311,8 @@ header {
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  -webkit-transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  -webkit-transition: -webkit-transform 650ms
+    cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   -o-transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
@@ -363,12 +369,14 @@ header {
   font-family: "TheHistoriaDemo", sans-serif;
   letter-spacing: 0.2rem;
   background: -o-linear-gradient(left, #0e39d8, #0e9ed8, #0ed8ad);
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#0e39d8),
-      color-stop(#0e9ed8),
-      to(#0ed8ad));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#0e39d8),
+    color-stop(#0e9ed8),
+    to(#0ed8ad)
+  );
   background: linear-gradient(to right, #0e39d8, #0e9ed8, #0ed8ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -392,12 +400,14 @@ header {
   transition: 400ms;
   border-radius: 3rem;
   background: -o-linear-gradient(right, #0e39d8, #0e9ed8, #0ed8ad);
-  background: -webkit-gradient(linear,
-      right top,
-      left top,
-      from(#0e39d8),
-      color-stop(#0e9ed8),
-      to(#0ed8ad));
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#0e39d8),
+    color-stop(#0e9ed8),
+    to(#0ed8ad)
+  );
   background: linear-gradient(to left, #0e39d8, #0e9ed8, #0ed8ad);
 }
 
@@ -426,12 +436,14 @@ header {
   font-size: 13rem;
   font-family: "TheHistoriaDemo";
   background: -o-linear-gradient(top, #3d94dd, #3dddd6, #3ddd86);
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#3d94dd),
-      color-stop(#3dddd6),
-      to(#3ddd86));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3d94dd),
+    color-stop(#3dddd6),
+    to(#3ddd86)
+  );
   background: linear-gradient(to bottom, #3d94dd, #3dddd6, #3ddd86);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -773,45 +785,60 @@ span {
 }
 
 #project-item1 {
+  background: url("./../img/budget.png") no-repeat top;
+  background-size: cover;
+}
+#project-item2 {
+  background: url("./../img/todo.png") no-repeat top;
+  background-size: cover;
+}
+#project-item3 {
+  background: url("./../img/country.png") no-repeat top;
+  background-size: cover;
+}
+#project-item4 {
   background: url("./../img/slide.JPG") no-repeat top;
   background-size: cover;
 }
 
-#project-item2 {
+#project-item5 {
   background: url("./../img/great-outdoor.JPG") no-repeat top;
   background-size: cover;
 }
 
-#project-item3 {
-  background: url("./../img/parallax.JPG") no-repeat top;
-  background-size: cover;
-}
-
-#project-item4 {
-  background: url("./../img/forcar.JPG") no-repeat top;
-  background-size: cover;
-}
-
-#project-item5 {
-  background: url("./../img/portfolio.JPG") no-repeat top;
-  background-size: cover;
-}
-
 #project-item6 {
-  background: url("./../img/documentation.JPG") no-repeat top;
+  background: url("./../img/weather.png") no-repeat top;
   background-size: cover;
 }
 
 #project-item7 {
-  background: url("./../img/norman.JPG") no-repeat top;
+  background: url("./../img/forcar.JPG") no-repeat top;
   background-size: cover;
 }
 
 #project-item8 {
-  background: url("./../img/beaut-form.JPG") no-repeat top;
+  background: url("./../img/portfolio.JPG") no-repeat top;
   background-size: cover;
 }
 
+#project-item9 {
+  background: url("./../img/documentation.JPG") no-repeat top;
+  background-size: cover;
+}
+
+#project-item10 {
+  background: url("./../img/norman.JPG") no-repeat top;
+  background-size: cover;
+}
+
+#project-item11 {
+  background: url("./../img/beaut-form.JPG") no-repeat top;
+  background-size: cover;
+}
+#project-item12 {
+  background: url("./../img/parallax.JPG") no-repeat top;
+  background-size: cover;
+}
 /* ******************************************************************** */
 /* *certificates Section* */
 /* ******************************************************************** */
