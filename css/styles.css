@@ -775,6 +775,36 @@ span {
   transform: scale(1, 1);
 }
 
+.built-with {
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  min-width: 50px;
+  max-width: 200px;
+  height: 100px;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.built-text {
+  font-size: 18px;
+}
+.built-icons {
+  display: flex;
+  /* flex-direction: row; */
+}
+.built-icons img {
+  width: 60px;
+}
+
 .img-link {
   position: absolute;
   top: 0;
@@ -786,15 +816,15 @@ span {
 }
 
 #project-item1 {
-  background: url("./../img/budget.png") no-repeat top;
+  background: url("./../img/pokemon.png") no-repeat top;
   background-size: cover;
 }
 #project-item2 {
-  background: url("./../img/todo.png") no-repeat top;
+  background: url("./../img/image-uploader.png") no-repeat top;
   background-size: cover;
 }
 #project-item3 {
-  background: url("./../img/country.png") no-repeat top;
+  background: url("./../img/image-gallery.png") no-repeat top;
   background-size: cover;
 }
 #project-item4 {
@@ -838,6 +868,18 @@ span {
 }
 #project-item12 {
   background: url("./../img/parallax.JPG") no-repeat top;
+  background-size: cover;
+}
+#project-item13 {
+  background: url("./../img/budget.png") no-repeat top;
+  background-size: cover;
+}
+#project-item14 {
+  background: url("./../img/todo.png") no-repeat top;
+  background-size: cover;
+}
+#project-item15 {
+  background: url("./../img/country.png") no-repeat top;
   background-size: cover;
 }
 /* ******************************************************************** */
