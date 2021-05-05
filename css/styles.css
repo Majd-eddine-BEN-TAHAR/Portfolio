@@ -815,6 +815,11 @@ span {
   cursor: url("./../img/cursor.png"), pointer;
 }
 
+#project-item0 {
+  background: url("./../img/ecommerce.png") no-repeat top;
+  background-size: cover;
+}
+
 #project-item1 {
   background: url("./../img/pokemon.png") no-repeat top;
   background-size: cover;
