@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,400,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400&display=swap");
 
 @font-face {
   font-family: "TheHistoriaDemo";
@@ -24,7 +22,7 @@
 
 html {
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: url("./../img/cursor.png"), pointer;
@@ -624,7 +622,7 @@ header {
   padding-bottom: 4rem;
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-family: "Dancing Script", sans-serif;
+  font-family: "Nunito", sans-serif;
   letter-spacing: 0.4rem;
   opacity: 0.5;
   color: #3d94dd;
@@ -661,7 +659,7 @@ span {
 .project-item::before {
   content: "";
   color: #3d94dd;
-  font-family: "Dancing Script", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,7 +699,7 @@ span {
   content: attr(code);
   color: #eee;
   font-family: "Dancing Script", sans-serif;
-  font-size: 7rem;
+  font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1628,6 +1626,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   font-size: 16px;
+  align-items: center;
   /* Larger text */
 }
 
@@ -1661,4 +1660,70 @@ footer {
 
 .fa-clipboard:hover {
   opacity: 0.7;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(20px);
+  /* Slide-in effect */
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.toast-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.toast-success {
+  background-color: #4CAF50;
+  /* Green background for success */
+}
+
+.toast-error {
+  background-color: #f44336;
+  /* Red background for error */
+}
+
+/* Add animation for slide-in and fade-out effects */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

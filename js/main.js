@@ -40,16 +40,36 @@ AOS.init({
 });
 function toggleTooltip() {
   var tooltip = document.getElementById("emailTooltip");
-  tooltip.style.display = tooltip.style.display === "none" ? "block" : "none";
+  tooltip.style.display = tooltip.style.display === "none" ? "flex" : "none";
 }
 
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text).then(
     function () {
-      alert("Email copied to clipboard!");
+      showToast("Email copied to clipboard!");
     },
     function (err) {
       console.error("Error copying to clipboard", err);
     }
   );
+}
+
+function showToast(message, type = "success") {
+  var toast = document.createElement("div");
+  toast.classList.add("toast", `toast-${type}`);
+  toast.innerHTML = `<i class="fas fa-${
+    type === "success" ? "check-circle" : "times-circle"
+  } toast-icon"></i>${message}`;
+  document.getElementById("toastContainer").appendChild(toast);
+
+  // Apply slide-in animation
+  toast.style.animation = "slideIn 0.5s ease forwards";
+
+  setTimeout(function () {
+    // Apply fade-out animation
+    toast.style.animation = "fadeOut 0.5s ease forwards";
+    setTimeout(function () {
+      toast.remove();
+    }, 500); // Match the duration of the fade-out animation
+  }, 3000); // Display time
 }
